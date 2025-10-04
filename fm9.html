@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: hsl(217, 54%, 11%);
+            display: flex;
+            justify-content: center;
+            margin-top: 130px;
+        
+        }
+        .container{
+            background-color: hsl(216, 50%, 16%);
+            display: flex;
+            flex-direction: column;
+            border-radius: 25px;
+            height: auto;
+            width: 250px;
+            flex-wrap: wrap;
+            text-align: center;
+        }
+       .cube{
+        margin: 15px;
+        border-radius: 10px;
+       overflow: hidden;
+       position: relative;
+        }
+
+.light img {
+  width: 100%;
+  border-radius: 10px;
+  display: block;
+}
+
+.light:hover::after{
+  content: "";
+  position: absolute;
+  cursor: pointer;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  background-color: hsla(178, 100%, 50%, 0.5);
+  background-image: url(asset/icon-view.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  border-radius: 10px;
+}
+
+        p{
+         color:  hsl(215, 51%, 70%);
+         margin-top: -10px;
+         margin-left: 15px;
+         text-align: start;
+         margin-right: 15px;
+        }
+        table{
+            text-align: start;
+            margin-top: -15px;
+            margin-left: 15px;
+        }
+        hr{
+            border: 0.5px solid hsl(215, 51%, 70%); 
+            width:85%;
+            margin-top: -10px;
+        }
+        .inside{
+            display: flex;
+            margin-bottom: 15px;
+            flex-direction: row;
+        }
+        .hd{
+           color: white; 
+           margin-right: 20px; 
+        }
+        .point:hover{
+            color: hsl(178, 100%, 50%);
+            cursor: pointer;
+        }
+        .in{
+            color: white;
+        }
+        .in-1:hover{
+            color: aqua;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+    <div class="cube light">
+    <img src="asset/image-equilibrium.jpg" alt="pic" height="200px" width="220px"></div>
+    <h2 class="hd point">Equilibrium #3429 </h2>
+    <p>Our Equilibrium collection promotes balance and calm.</p>
+    <table>
+        <tr>
+         <td>
+          <img src="asset/icon-ethereum.svg" alt="stone">
+        </td>
+         <td>
+           <h4 style="color: hsl(178, 100%, 50%);">0.041 ETH</h4>
+         </td>
+         <td>
+         </td>
+         <td>
+         <img src="asset/icon-clock.svg" alt="clck">
+         </td>
+         <td>
+         <h4 style="color:  hsl(215, 51%, 70%);">3 days left</h4>
+         </td>
+        </tr>
+    </table>
+    <hr>
+    <div class="inside">
+     <img src="asset/image-avatar.png" alt="pic" height="40px" width="40px" style="border-radius: 20px;  border: 0.5px solid hsl(215, 51%, 70%); margin-left: 15px;">
+     <p style="color:hsl(215, 51%, 70%); margin-top: 15px;">Creation of <span class="in in-1">Jules Wyvern</span></p>
+    </div>
+</div>
+</body>
+</html>
